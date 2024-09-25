@@ -2,6 +2,8 @@
 <html>
 
 
+
+
 <head>
   <title>Pagina Pessoal Lyssandra</title>
 </head>
@@ -12,6 +14,7 @@
     box-sizing: border-box;
   }
 
+
   body {
     font-family: arial, sans-serif;
     background-color: #f4f4f4;
@@ -20,6 +23,7 @@
     padding: 20px;
   }
 
+
   header {
     background-color: #333;
     color: #fff;
@@ -27,30 +31,37 @@
     text-align: center;
   }
 
+
   header h1 {
     margin-bottom: 10px;
   }
 
+
   nav ul {
     list-style: nome;
   }
+
 
   nav ul li {
     display: inline;
     margin: 0 10px;
   }
 
+
   nav ul li a {
     color: #fff;
     text-decoration: none;
   }
 
+
   section {
     margin: 20px 0;
   }
 
+
   section#sobre,
   section#projetos,
+  section#cadastro,
   section#contato {
     background-color: #fff;
     padding: 20px;
@@ -58,11 +69,61 @@
     box-shadow: 0 0 10px rgba (0, 0, 0.1);
   }
 
+
   footer {
     text-align: center;
     margin-top 20px;
   }
+
+
+  h3 {
+    text-align: center;
+
+
+  }
+
+
+  form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+
+  label,
+  input {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
 </style>
+
 
 <body>
   <header>
@@ -71,10 +132,13 @@
       <ul>
         <li><a href="#sobre">Sobre mim<a></li>
         <li><a href="#projetos">Projetos<a></li>
+        <li><a href="#cadastro">Cadrastro<a></li>
         <li><a href="#contato">Contatos<a></li>
       </ul>
     </nav>
   </header>
+
+
 
 
   <section id="sobre">
@@ -82,6 +146,8 @@
     <p>sou uma boa pessoa em fazer silencio para os professores, quero terminar meus estudos sem atrsasos, terminar o
       curso do sesi/senai, morar eu sozinha com meu gato, um cachorro, um xinguilingue feliz da vida e com saúde!</p>
   </section>
+
+
 
 
   <section id="projetos">
@@ -94,18 +160,29 @@
     </ul>
   </section>
 
+  <section id="cadastro">
+    <h3>Cadastro de pessoas</h3>
+    <form>
+      <label>Nome</label>
+      <input type="text" id="nome" name="nome" required>
+      <label>Email</label>
+      <input type="email" id="email" name="email" required>
+      <label>Telefone</label>
+      <input type="tel" id="telefone" name="telefone" required>
+      <input type="submit" value="cadastrar">
+    </form>
+
+  </section>
+
   <section id="contato">
-    <h2>Contato</h2>
+    <h4>Contato</h4>
     <p>Entre em contato comigo via <a href="mailto:lyssandra_santos@estudante.sesisenai.org.br">
         lyssandra.santos@estudante.sesisenai.org.br</a>.</p>
   </section>
-
-
 
   <footer>
     <p>&copy; @2024 - lyssandra vitoria saquini dos santos</p>
   </footer>
 </body>
-
 
 </html>
